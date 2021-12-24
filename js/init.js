@@ -101,15 +101,15 @@ document.addEventListener("DOMContentLoaded", function (e) {
       let inputC = document.getElementById("resultCurrency");
 
       if (bToC === "1") {
-        inputC.innerHTML = `<br><input type="number" class="form-control" value="` + (parseFloat(rateUsd) * parseFloat(inputB)) + `">`
+        inputC.innerHTML = `<br><input type="number" class="form-control" value="` + parseFloat(parseFloat(rateUsd) * parseFloat(inputB)) + `">`
       };
 
       if (bToC === "2") {
-        inputC.innerHTML = `<br><input type="number" class="form-control" value="` + parseFloat(rateEur) * parseFloat(inputB) + `">`
+        inputC.innerHTML = `<br><input type="number" class="form-control" value="` + parseFloat(parseFloat(rateEur) * parseFloat(inputB)) + `">`
       };
 
       if (bToC === "3") {
-        inputC.innerHTML = `<br><input type="number" class="form-control" value="` + (parseFloat(rateGbp) * parseFloat(inputB)) + `">`
+        inputC.innerHTML = `<br><input type="number" class="form-control" value="` + parseFloat(parseFloat(rateGbp) * parseFloat(inputB)) + `">`
       };
 
     });
@@ -121,15 +121,15 @@ document.addEventListener("DOMContentLoaded", function (e) {
       let inputBit = document.getElementById("resultBit");
 
       if (cToB === "1") {
-        inputBit.innerHTML = `<br><input type="number" class="form-control" value="` + (parseFloat(inputCurrency) / parseFloat(rateUsd)) + `">`
+        inputBit.innerHTML = `<br><input type="number" class="form-control" value="` + parseFloat(parseFloat(inputCurrency) / parseFloat(rateUsd)) + `">`
       };
 
       if (cToB === "2") {
-        inputBit.innerHTML = `<br><input type="number" class="form-control" value="` + parseFloat(rateEur) / parseFloat(inputCurrency) + `">`
+        inputBit.innerHTML = `<br><input type="number" class="form-control" value="` + parseFloat(parseFloat(inputCurrency) / parseFloat(rateEur)) + `">`
       };
 
       if (cToB === "3") {
-        inputBit.innerHTML = `<br><input type="number" class="form-control" value="` + (parseFloat(rateGbp) / parseFloat(inputCurrency)) + `">`
+        inputBit.innerHTML = `<br><input type="number" class="form-control" value="` + parseFloat(parseFloat(inputCurrency) / parseFloat(rateUsd)) + `">`
       };
     });
 
