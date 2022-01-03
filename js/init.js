@@ -94,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     }
 
+
     //boton convierte de bitcoin a moneda
     document.getElementById("converterBtoC").addEventListener("click", () => {
       let bToC = document.getElementById("bToC").value;
@@ -129,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       };
 
       if (cToB === "3") {
-        inputBit.innerHTML = `<br><input type="number" class="form-control" value="` + parseFloat(parseFloat(inputCurrency) / parseFloat(rateUsd)) + `">`
+        inputBit.innerHTML = `<br><input type="number" class="form-control" value="` + parseFloat(parseFloat(inputCurrency) / parseFloat(rateGbp)) + `">`
       };
     });
 
